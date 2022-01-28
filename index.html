@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/baa78008ba.css">
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-wrapper">
+        <div class="player-time">
+          <div class="player-time__current"></div>
+          <div class="player-audio__name"></div>
+          <div class="player-time__duration"></div>
+        </div>
+        <div class="player-timeline">
+          <div class="progress"></div>
+        </div>
+        
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        
+        <div class="player-setting">
+          <div class="play-volume">
+            <div class="progress-volume__wrapper">
+              <div class="progress-volume"></div>
+            </div>
+            <i class="fa fa-volume-up hide"></i>
+            <i class="fa fa-volume-down"></i>
+            <i class="fa fa-volume-off hide"></i>
+          </div>
+          <div class="play-list__toggle"></div>
+        </div>
+
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+
+    <div class="settings">
+    </div>
+
+    <div class="setting-popup hide">
+
+      <div class="change-language--wrapper">
+        <button class="change-language--btn">change language</button>
+        <div class="current-language--slider">
+        </div>
+      </div>
+      
+      <div class="change-laguage--hide_wrapper">
+
+        <p class="change-laguage__text">Скрыть элемент</p>
+
+        <div class="input-wrapper">
+          <label for="show-time">Время</label>
+          <input class="setting-input" type="checkbox" data-ru="Время" data-en="Time" name="time" id="show-time">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="show-date">Дата</label>
+          <input class="setting-input" type="checkbox" data-ru="Дата" data-en="Date" name="date" id="show-date">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="show-greeting">Приветствие</label>
+          <input class="setting-input" type="checkbox" data-ru="Приветствие" data-en="Greeting" name="greeting-container" id="show-greeting">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="show-quote">Цитаты</label>
+          <input class="setting-input" type="checkbox" data-ru="Цитаты" data-en="Quote" name="footer" id="show-quote">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="show-wather">Погода</label>
+          <input class="setting-input" type="checkbox" data-ru="Погода" data-en="Weather" name="weather" id="show-wather">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="show-player">Плеер</label>
+          <input class="setting-input" type="checkbox" data-ru="Плеер" data-en="Player" name="player" id="show-player">
+        </div>
+
+      </div>
+      
+      <div class="api-image-wrapper">
+
+        <div class="github-api">Github</div>
+        
+        <div class="api-wrapper">
+          <label for="flickr-api" class="flickr-btn">Flickr API</label>
+          <input type="text" name="" id="flickr-api" value="">
+          <p class="flickr-error api-error"></p>
+        </div>
+        
+        <div class="api-wrapper">
+          <label for="unsplash-api" class="unsplash-btn">Unsplash API</label>
+          <input type="text" name="" id="unsplash-api" value="">
+          <p class="unsplash-error api-error"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="weather start-hide">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" id="user_name"/>
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="quotes-wrapper">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

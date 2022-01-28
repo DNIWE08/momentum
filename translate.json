@@ -1,0 +1,28 @@
+[
+  {
+    "greeting": [
+      "Доброе утро",
+      "Добрый день",
+      "Добрый вечер",
+      "Спокойной ночи"
+    ],
+    "weather": {
+      "language": "ru-Ru",
+      "units": "м/с",
+      "text-content": ["Скорость ветра", "Влажность"]
+    }
+  },
+  {
+    "greeting": [
+      "Good morning",
+      "Good afternoon",
+      "Good evening",
+      "Good night"
+    ],
+    "weather": {
+      "language": "en-US",
+      "units": "m/s",
+      "text-content": ["Wind speed", "Humidity"]
+    }
+  }
+]
